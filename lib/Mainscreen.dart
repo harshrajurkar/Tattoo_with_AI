@@ -26,7 +26,7 @@ class _MainScreenState extends State<MainScreen> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   Future<List<String>> fetchImagesFromUnsplash(String query) async {
-    final String accessKey = '_OtXt-IeY0ZA8Ry4nwvslWbMeRZ8cvjFS_m6Z8yDH7A';
+    final String accessKey = 'ADD_YOUR_API_KEY';
     final String url =
         'https://api.unsplash.com/search/photos?query=$query&client_id=$accessKey';
 
