@@ -5,6 +5,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:tatto_webapp/loginscreen.dart';
+import 'constants.dart';
+
 
 class MainScreen extends StatefulWidget {
   @override
@@ -26,7 +28,7 @@ class _MainScreenState extends State<MainScreen> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   Future<List<String>> fetchImagesFromUnsplash(String query) async {
-    final String accessKey = 'ADD_YOUR_API_KEY';
+    //final String accessKey = 'ADD_YOUR_API_KEY';
     final String url =
         'https://api.unsplash.com/search/photos?query=$query&client_id=$accessKey';
 
@@ -43,7 +45,7 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   Future<List<String>> fetchRandomTattooImages() async {
-    final String accessKey = '_OtXt-IeY0ZA8Ry4nwvslWbMeRZ8cvjFS_m6Z8yDH7A';
+   //final String accessKey = '_OtXt-IeY0ZA8Ry4nwvslWbMeRZ8cvjFS_m6Z8yDH7A';
     final String url =
         'https://api.unsplash.com/photos/random?query=tattoo&count=$_randomImagesCount&client_id=$accessKey';
 
